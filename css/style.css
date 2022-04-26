@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto+Condensed:wght@700&display=swap');
+ 
+
+/*Using * selects all elements and resets some margins, paddings and other default styles */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background-color:#2a2c2f;
+    color: #bcc5e4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+}
+h1,h2,h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+h3 {
+    font-size: 18px;
+}
+a{
+    color:#eba937;
+}
+p {
+    margin-bottom: 15PX;;
+}
+ul span {
+font-size: 14px;
+font-style: italic;
+}
+ul li {
+    padding-bottom: 15px;
+}
+
+section {
+    min-height: 400px;
+    /*Using FLEXBOX instead of TABLES for better layout control*/
+    display:flex;
+    /*chosing between column or row layout*/
+    flex-direction: row;
+    align-items: center;
+    padding: 100px 0;
+    gap: 50px;
+}
+section div:first-child {
+    min-width: 50%;
+}
+section div img {
+    width: 350px;
+    height: auto;
+}
+/*UTILITY classes*/
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.acc-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color:#eba937;
+}
+.card {
+    background-color:#1c1d1e;
+    padding: 25px;
+    border-radius: 20px;
+    align-self: flex-end;
+}
+.mr-n {
+    margin-right: -100px;
+    z-index: 1;
+}
+.ml-n {
+    margin-left: -100px;
+    z-index: 1;
+}
+
+/*HEADER styles*/
+#header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    min-height: 50px;
+
+}
+#header a{
+    font-size: 16px;
+    color:#bcc5e4;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: 'Fira Sans', sans-serif;
+}
+#header a span {
+    color:#eba937;
+    padding-right: 5px;
+    
+}
+
+#header #logo {
+    color:#eba937;
+    border: 1px dashed #eba937;
+    padding: 10px;
+}
+
+
+
+/*INTRO section styles*/
+#intro {
+    width: 60%;
+    min-width: 600px;
+}
+#intro h1 {
+    display: flex;
+    flex-direction: column;
+}
+/*ABOUT section styles*/
+#about {
+    flex-direction: row-reverse;
+}
+
+/*EDUCATION section styles*/
+
+/*EXPERIENCE section styles*/
+#xp {
+    flex-direction: row-reverse;
+}
+/*SKILLS section styles*/
+#skills ul li::before {
+    content: "»";
+    color: #eba937;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -15px; 
+}
+#skills ul li {
+    margin-left: 15px;
+    width: 200px;
+    padding-bottom: 0;
+}
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap:50px;
+    justify-content: space-between;
+
+}
+
+/*CONTACT section styles*/
+#contact {
+    flex-direction: row-reverse;
+}
