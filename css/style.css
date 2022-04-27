@@ -114,6 +114,23 @@ section div img {
     padding: 10px;
 }
 
+/*Add underline effect under the menu items*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a:after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid #eba937;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin-top: 5px;
+}
+nav a:hover:after {
+    transform: scaleX(1);
+}
+
 
 
 /*INTRO section styles*/
