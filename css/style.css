@@ -7,6 +7,9 @@
     padding: 0;
     list-style: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color:#2a2c2f;
     color: #bcc5e4;
@@ -38,6 +41,10 @@ ul span {
 font-size: 14px;
 font-style: italic;
 }
+
+ul h3 span {
+    font-style: normal;
+    }
 ul li {
     padding-bottom: 15px;
 }
@@ -86,17 +93,39 @@ section div img {
     margin-left: -100px;
     z-index: 1;
 }
+/*To top btn*/
+a#to-top {
+    background-color: #eba937;
+    color: #1c1d1e;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    z-index: 100;
+}
+a#to-top span {
+    font-size: 30px;
+    font-weight: bold;
+}
 
 /*HEADER styles*/
-#header {
+
+#header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
     min-height: 50px;
-    position: fixed;
-   top: 10px;
-
+    background-color: #2a2c2f;
+    z-index: 100;
 }
+
 #header a{
     font-size: 16px;
     color:#bcc5e4;
